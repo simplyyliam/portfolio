@@ -1,10 +1,6 @@
 import React, { useRef} from "react";
 import { Nav } from "./Components/nav";
 import { ProjectCards } from "./Components/ProjectCards";
-import githubIcon from './assets/github.svg';
-import instagramIcon from './assets/instagram.svg';
-import dp from './assets/dp.png';
-
 export default function App () {
 
   const HomeRef = useRef<HTMLDivElement | null>(null)
@@ -37,13 +33,13 @@ export default function App () {
               
             <button className="flex items-center gap-3">
             <div className="bg-[#383838] w-[34px] h-[34px] rounded-xl flex items-center justify-center">
-                <img src= {instagramIcon} />
+                <img src='/Portfolio/assets/instagram.svg' />
              </div>
            <a href="">Simplyyliam</a>
         </button>
             <button className="flex items-center gap-3">
             <div className="bg-[#383838] w-[34px] h-[34px] rounded-xl flex items-center justify-center">
-                <img src= {githubIcon} />
+                <img src='/Portfolio/assets/github.svg' />
              </div>
            <a href="https://github.com/" target="_blannk">liam devs</a>
         </button>
@@ -61,7 +57,7 @@ export default function App () {
         </div>
           
           <div className=" w-[1173px] h-[1561px] items-center justify-center flex relative top-3">
-            <img src= {dp} alt="" />
+            <img src='/Portfolio/assets/dp.png' alt="" />
           </div>
         </section>
 
